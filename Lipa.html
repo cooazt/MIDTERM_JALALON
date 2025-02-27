@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lipa City - Explore & Discover</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        section {
+            background-color: #dbf6ff;
+            padding: 50px 0;
+        }
+        #history .box, #tourist .box, #hotlines .box, #foods .box {
+            max-width: 95%;
+            width: 95%;
+            padding: 40px;
+            background: #FFFFFF;
+            border-radius: 15px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+            text-align: justify;
+            margin: 20px auto;
+        }
+        #tourist .box, #foods .box {
+            background: white;
+        }
+        #history h1, #tourist h1, #hotlines h1, #foods h1 {
+            text-align: center;
+            color: #14517B;
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .tourist-images, .food-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .tourist-item, .food-item {
+            max-width: 30%;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .tourist-item:hover, .food-item:hover {
+            transform: scale(1.05);
+        }
+        .tourist-item img, .food-item img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .tourist-description, .food-description {
+            font-size: 20px;
+            color: #333;
+            margin-top: 10px;
+        }
+        .hotline-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            font-size: 22px;
+            color: #333;
+        }
+        .hotline-list li {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 15px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .hotline-list li span {
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#history">HISTORY</a>
+        <a href="#tourist">TOURIST ATTRACTIONS</a>
+        <a href="#contact">CONTACTS US</a>
+        <a href="#foods">FOODS</a>
+    </nav>
+    
+    <section id="home">
+        <h1>Welcome to Lipa City!</h1>
+        <p>Discover the beauty and rich culture of Lipa.</p>
+    </section>
+    <section id="history">
+        <div class="box">
+            <h1>History of Lipa City</h1>
+            <p>
+                Lipa City, located in the province of Batangas, is known for its rich history and cultural heritage. 
+                Originally a small settlement, Lipa flourished during the Spanish colonial period, becoming an economic 
+                hub due to its booming coffee industry in the 19th century. At one point, it was even referred to as 
+                the "Coffee Capital of the Philippines."
+            </p>
+            <p>
+                The city played a significant role in Philippine history, particularly during the Spanish, American, 
+                and Japanese occupations. It witnessed battles and revolutions that shaped its identity and resilience. 
+                Today, Lipa continues to thrive as a progressive city, blending modern development with its deep-rooted 
+                traditions and historical landmarks.
+            </p>
+            <h2>Lipa City: The Former Coffee Capital of the World</h2>
+            <p>
+                In the 19th century, Lipa City became a global coffee powerhouse due to its fertile soil and ideal climate. 
+                It produced high-quality Barako coffee, attracting traders from Europe and the Americas. By the 1880s, Lipa was 
+                among the world’s top coffee exporters, earning the title “Coffee Capital of the World.” Its wealth and influence 
+                led Spain to grant it the prestigious title “Villa de Lipa” in 1887. However, a coffee blight devastated plantations, 
+                ending its dominance. Despite this, Lipa remains known for its rich coffee heritage and continues to celebrate its 
+                legacy through local coffee culture.
+            </p>
+        </div>
+    </section>
+    <section id="tourist">
+        <div class="box">
+            <h1>Tourist Attractions</h1>
+            <div class="tourist-images">
+                <div class="tourist-item">
+                    <img src="taal_sapa.jpg" alt="Taal Lake">
+                    <p class="tourist-description">Taal Lake - A stunning natural attraction with breathtaking views.</p>
+                </div>
+                <div class="tourist-item">
+                    <img src="VOLCANO2.jpg" alt="Taal Volcano">
+                    <p class="tourist-description">Taal Volcano - One of the world’s smallest active volcanoes, offering scenic hikes.</p>
+                </div>
+                <div class="tourist-item">
+                    <img src="SUITE.jpg" alt="Mount Malarayat Suite">
+                    <p class="tourist-description">Mount Malarayat Suite - A luxurious getaway with picturesque mountain views.</p>
+                </div>
+                <div class="tourist-item">
+                    <img src="THE FARM.png" alt="The Old Grove Farmstead">
+                    <p class="tourist-description">The Old Grove Farmstead - A charming countryside destination perfect for relaxation.</p>
+                </div>
+                <div class="tourist-item">
+                    <img src="falls.jpg" alt="Bulalacao Falls">
+                    <p class="tourist-description">Bulalacao Falls - A hidden gem with crystal-clear waters ideal for nature lovers.</p>
+                </div>
+                <div class="tourist-item">
+                    <img src="TAGBAKIN LAKE.jpg" alt="Tagbakin Lakeview">
+                    <p class="tourist-description">Tagbakin Lakeview - A peaceful retreat with panoramic lake scenery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="foods">
+        <div class="box">
+            <h1>Foods</h1>
+            <p></p>
+            <div class="food-images">
+                <div class="food-item">
+                    <img src="FOODS/lomii.jpg" alt="Lomi">
+                    <p class="food-description">Lomi - A savory noodle dish with thick broth and toppings.</p>
+                </div>
+                <div class="food-item">
+                    <img src="FOODS/kape.jpg" alt="Kapeng Barako">
+                    <p class="food-description">Kapeng Barako - The famous strong coffee of Lipa.</p>
+                </div>
+                <div class="food-item">
+                    <img src="FOODS/tapa.jpg" alt="Tapang Taal">
+                    <p class="food-description">Tapang Taal - A flavorful marinated pork dish.</p>
+                </div>
+                <div class="food-item">
+                    <img src="FOODS/suman.jpg" alt="Suman">
+                    <p class="food-description">Suman - A sweet rice cake wrapped in banana leaves.</p>
+                </div>
+                <div class="food-item">
+                    <img src="FOODS/bulalo.jpg" alt="Bulalo">
+                    <p class="food-description">Bulalo - A beef bone marrow soup, perfect for cold weather.</p>
+                </div>
+                <div class="food-item">
+                    <img src="FOODS/pan.jpg" alt="Empanada">
+                    <p class="food-description">Empanada - A savory pastry filled with meat and vegetables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="box">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out to us through the form below or our social media channels.</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        #contact .box {
+            text-align: center;
+            background: #dcf6ff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        #contact input, #contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 100%;
+        }
+        #contact button {
+            background: #14517B;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        #contact button:hover {
+            background: #0e3b5a;
+        }
+        .social-icons a {
+            margin: 10px;
+            text-decoration: none;
+            color: #14517B;
+            font-weight: bold;
+        }
+        .social-icons a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
+</body>
+</html>
